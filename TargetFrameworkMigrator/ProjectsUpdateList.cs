@@ -45,11 +45,10 @@ namespace VSChangeTargetFrameworkExtension
 
         public string State { set { label1.Text = value; } }
 
-        private async void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            var onUpdate = UpdateFired;
-            if(onUpdate != null)
-                onUpdate.Invoke();
+            var onUpdate = this.UpdateFired;
+            onUpdate?.Invoke();
         }
 
         private void button1_Click(object sender, EventArgs e)

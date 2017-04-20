@@ -9,13 +9,13 @@ PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
 
 ***************************************************************************/
 
-using System;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.VsSDK.UnitTestLibrary;
-
 namespace TargetFrameworkMigrator_UnitTests
 {
+    using System;
+    using Microsoft.VisualStudio;
+    using Microsoft.VisualStudio.Shell.Interop;
+    using Microsoft.VsSDK.UnitTestLibrary;
+
     static class UIShellServiceMock
     {
         private static GenericMockFactory uiShellFactory;
